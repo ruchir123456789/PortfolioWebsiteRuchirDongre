@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style11.css">
+
+    <style>
+
+
+body{
+    /* background-color: #000; */
+    background-color: aliceblue;
+    
+}
+a,a:vidited,a:hover{
+    text-decoration: none;
+}
+ li{
+    list-style: none;
+}
+img{
+    width: 200px;
+}
+.nav1{
+    min-height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+.nav1 ul{
+    width: 80%;
+}
+.nav1 ul li{
+    border-bottom:0.5rem solid #848080 ;
+    position: relative;
+    z-index: 10;
+}
+
+.nav1 ul li .link span{
+    display: flex;
+    padding: 2rem 0 2rem 0;
+    z-index: 10;
+    mix-blend-mode: difference;
+    display: inline-block;
+    position: relative;
+    color: #535252;
+    font-size: 3.4rem;
+    text-transform: uppercase;
+}
+
+.nav1 ul li .link > img{
+    mix-blend-mode: difference;
+    z-index: 10;
+
+}
+
+.hover-reveal{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: 50%;
+    left: 50%;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.5s ease-out;
+}
+
+.hover-reveal img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    position: relative;
+    transition: text-transform 0.5s ease-out;
+}
+@media(max-width:768px){
+    .nav1 ul{
+        width: 93%;
+
+    }
+    .nav1 ul li .link  span{
+        font-size: 2.5rem;
+    }
+    .nav1 ul li .link > img {
+            height: 18px;
+    }
+    .hover-reveal{
+        width: 220px;
+        height: 300px
+         ;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="cursor"></div> -->
+    <div class="main">
+        <div id="firstpage">
+          <nav>
+            <div class="logo">
+              <img src="../images/Group 1.png" alt="" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H160v400Zm140-40-56-56 103-104-104-104 57-56 160 160-160 160Zm180 0v-80h240v80H480Z"
+                />
+              </svg>
+            </div>
+  
+            <div class="mid">
+              <a href="./about.html">About</a>
+              <a href="./services.html">Services</a>
+              <a href="../index.html">Portfolio</a>
+              <!-- <a href="./route/about.html">Testimonial</a> -->
+            <a href="./skills.html">Skills</a>
+            </div>
+            <div class="resume"><a href="https://docs.google.com/document/d/1twCAYHcGH4HnI7N34FpXT1mBNMfZGFZ9/edit?usp=sharing&ouid=117988826265748062242&rtpof=true&sd=true" style="text-decoration: none;">Download resume</a></div>
+          </nav>
+
+
+
+
+
+
+          <nav class="nav1">
+            <ul>
+                <li>
+                    <div class="link">
+                        <span> HTML , CSS</span>
+                        <!-- <img src="https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt=""> -->
+                        <div class="hover-reveal image01">
+                            <img style=" width: 200px;  height: 200px; object-fit: cover; " src="https://cdn3d.iconscout.com/3d/free/thumb/free-html-5728485-4781249.png?f=webp" alt="" class="hidden-img">
+                        </div>
+    
+                    </div>
+    
+                    
+                </li>
+    
+                <li>
+                    <div class="link">
+                        <span>Java Script NODE JS</span>
+                        <!-- <img src="https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt=""> -->
+                        <div class="hover-reveal image02">
+                            <img style=" width: 200px; height: 200px; object-fit: cover;" src="https://w7.pngwing.com/pngs/867/89/png-transparent-javascript-js-scripting-language-web-applications-frontend-backend-3d-icon.png">
+                        </div>
+    
+                    </div>
+    
+                    
+                </li>
+                <li>
+                    <div class="link">
+                        <span>EXPRESS JS</span>
+                        <!-- <img src="https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt=""> -->
+                        <div class="hover-reveal image03">
+                            <img style=" width: 200px;  height: 200px; object-fit: cover; " src="https://attoinfotech.com/wp-content/uploads/2022/07/node1.png">
+                        </div>
+    
+                    </div>
+    
+                    
+                </li>
+                <li>
+                    <div class="link">
+                        <span>MONGO DB</span>
+                        <!-- <img src="https://images.unsplash.com/photo-1633596683562-4a47eb4983c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80" alt=""> -->
+                        <div class="hover-reveal image04">
+                            <img style=" width: 200px; height: 200px; object-fit: cover; " src="data:image/jpeg;base64,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">
+                        </div>
+    
+                    </div>
+    
+                    
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+          
+<div class="footer">
+    <h1>“Design creates culture. Culture shapes values. Values determine the future.”</h1>
+  </div>
+  
+  
+  <div class="blackcolorfooter">
+   <div>
+    <h1>Our Vission</h1>
+    <h5>To make the world best website and to make the best design and provide the user with best service and experience thst is best UI/UX User experience </h5>
+   </div>
+  
+   <div>
+    <h1>CONTACT</h1>
+    <h5></h5>
+    <div>
+      <h2>Email</h2>
+      <h5>RuchirDongre@gmail.com</h5>
+    </div>
+   </div>
+  
+   <div>
+    <h1>DETAILS</h1>
+    <div>
+    <h2>Contact</h2>
+    <h5> + 9183451874 </h5>
+  </div>
+  </div>
+  
+  
+  <div>
+    <h1>INFORMATION</h1>
+    <div>    <h2>Location</h2>
+      <h5>Bhopal,Mp INDIA</h5></div>
+  </div>
+  
+  
+  </div>
+  
+
+
+  <script>
+
+
+const link = document.querySelectorAll('.link')
+const hoverReveal = document.querySelectorAll('.hover-reveal')
+const linkImages = document.querySelectorAll('.hidden-img')
+
+
+for (let i = 0; i < link.length; i++) {
+
+    link[i].addEventListener('mousemove', (e) => {
+        hoverReveal[i].style.opacity = 1;
+        hoverReveal[i].style.transform = `translate(-100%,-50%) rotate(5deg)`;
+        linkImages[i].style.transform = 'scale(1,1)';
+        hoverReveal[i].style.left = e.clientX + "px";
+
+    })
+    link[i].addEventListener('mouseleave', (e) => {
+        hoverReveal[i].style.opacity = 0;
+        hoverReveal[i].style.transform = `translate(-50%,-50%) rotate(-5deg)`;
+        linkImages[i].style.transform = 'scale(0.8,0.8)';
+        
+
+    })
+}
+
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../style11.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="cursor"></div>
+    <div class="main">
+        <div id="firstpage">
+          <nav>
+            <div class="logo">
+              <img src="../images/Group 1.png" alt="" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24"
+                viewBox="0 -960 960 960"
+                width="24"
+              >
+                <path
+                  d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-400H160v400Zm140-40-56-56 103-104-104-104 57-56 160 160-160 160Zm180 0v-80h240v80H480Z"
+                />
+              </svg>
+            </div>
+  
+            <div class="mid">
+                <a href="./about.html">About</a>
+                <a href="./services.html">Services</a>
+                <a href="../index.html">Portfolio</a>
+                <!-- <a href="./route/about.html">Testimonial</a> -->
+              <!-- <a href="./skills.html">Skills</a>
+            </div>
+            <div class="resume">Download resume</div>
+          </nav>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+          
+<div class="footer">
+    <h1>“Design creates culture. Culture shapes values. Values determine the future.”</h1>
+  </div>
+  
+  
+  <div class="blackcolorfooter">
+   <div>
+    <h1>Our Vission</h1>
+    <h5>To make the world best website and to make the best design and provide the user with best service and experience thst is best UI/UX User experience </h5>
+   </div>
+  
+   <div>
+    <h1>CONTACT</h1>
+    <h5></h5>
+    <div>
+      <h2>Email</h2>
+      <h5>RuchirDongre@gmail.com</h5>
+    </div>
+   </div>
+  
+   <div>
+    <h1>DETAILS</h1>
+    <div>
+    <h2>Contact</h2>
+    <h5> + 9183451874 </h5>
+  </div>
+  </div>
+  
+  
+  <div>
+    <h1>INFORMATION</h1>
+    <div>    <h2>Location</h2>
+      <h5>Bhopal,Mp INDIA</h5></div>
+  </div>
+  
+  
+  </div>
+  
+</body>
+</html> --> -->
